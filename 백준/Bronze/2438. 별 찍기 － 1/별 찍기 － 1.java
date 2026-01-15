@@ -14,5 +14,18 @@ public class Main{
             }
             System.out.println();
         }
+
+        /* 입출력이 많아지면 StringBuilder 사용이 정석이다.
+            import java.lang.StringBuilder => lang패키지 이므로 별도의 import는 불필요
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= i; j++) {
+                sb.append('*');
+            }
+            sb.append('\n');
+        }
+        System.out.print(sb);
+        */
     }
+
 }
