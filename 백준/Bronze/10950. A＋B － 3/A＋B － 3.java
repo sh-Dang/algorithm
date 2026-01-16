@@ -8,7 +8,8 @@ public class Main{
         StringTokenizer st = new StringTokenizer(br.readLine());
         int t = Integer.parseInt(st.nextToken());
         StringBuilder sb = new StringBuilder();
-        
+
+        // A + B - 4와 비교하여(반복문의 횟수가 정해진경우 for문)
         // 첫째 줄
         for(int i=0;i<t;i++){
             // 둘째 + 줄
@@ -20,4 +21,5 @@ public class Main{
         
         System.out.print(sb);
     }
+
 }
