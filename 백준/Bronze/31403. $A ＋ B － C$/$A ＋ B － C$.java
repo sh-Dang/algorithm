@@ -15,7 +15,8 @@ public class Main{
         
         // 정수일 때
         System.out.println(a+b-c);
-        // 문자열 일 때
+        // 문자열 일 때    // 문자열상태로 더한 후에 형 변환
         System.out.print(Integer.parseInt(A+B) - c);
     }
+
 }
