@@ -21,9 +21,21 @@ public class Main{
         
         int max = Arrays.stream(nums).max().getAsInt();
         int min = Arrays.stream(nums).min().getAsInt();
+        
+        /* 내부 로직 직접 구현 버전
+        int max = nums[0];
+        int min = nums[0];
+        
+        for (int i = 1; i < n; i++) {
+            if (nums[i] > max) max = nums[i];
+            if (nums[i] < min) min = nums[i];
+        }
+        */
+        
         // 출력할 StringBuilder
         sb.append(min).append(" ").append(max);
         // 결과 출력
         System.out.print(sb);
     }
+
 }
