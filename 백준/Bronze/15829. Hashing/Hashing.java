@@ -4,10 +4,10 @@ import java.io.InputStreamReader;
 public class Main{
     public static void main(String[] args)throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int mod = 1234567891; // 해시값이 커지는 현상 방지를 위한 mod값
-        int hash = 0;
-        int r = 31; // 특정 숫자
-        int pow = 1; // 거듭제곱 스태커
+        long mod = 1234567891; // 해시값이 커지는 현상 방지를 위한 mod값
+        long hash = 0;
+        long r = 31; // 특정 숫자
+        long pow = 1; // 거듭제곱 스태커
         
         int a = Integer.parseInt(br.readLine()); //주어진 글자 수
         String b = br.readLine();
