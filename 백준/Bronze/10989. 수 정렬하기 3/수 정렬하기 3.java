@@ -1,23 +1,28 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
-public class Main{
-    public static void main(String[] args)throws Exception{
+public class Main {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int a = Integer.parseInt(br.readLine()); // 들어오는 Input
-        int[] array = new int[a];
-        for(int i =0;i<array.length;i++){
-            int x = Integer.parseInt(br.readLine());
-            array[i] = x;
+        
+        int[] count = new int[10001];
+        
+        int n = Integer.parseInt(br.readLine());
+        
+        for (int i = 0; i < n; i++) {
+            count[Integer.parseInt(br.readLine())]++;
         }
-        Arrays.sort(array);
+
         StringBuilder sb = new StringBuilder();
-        for(int i =0;i<array.length;i++){ // a의 수만큼 반복
-            sb.append(array[i]).append("\n");
-            if (sb.length() > 10000) {
-                System.out.print(sb);
-                sb.setLength(0);
+        for (int i = 1; i <= 10000; i++) {
+            while (count[i] > 0) {
+                sb.append(i).append('\n');
+                count[i]--;
+                
+                if (sb.length() > 10000) {
+                    System.out.print(sb);
+                    sb.setLength(0);
+                }
             }
         }
         System.out.print(sb);
