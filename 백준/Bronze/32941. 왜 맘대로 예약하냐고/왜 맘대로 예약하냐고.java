@@ -24,9 +24,11 @@ public class Main{
             }
             if(!flag){
                 System.out.print("NO");
-                return;
+                return; // 프로그램 종료
+                // break; : 반복문만 종료하여 YES를 항상 print하게 되는 형식
             }
         }
         System.out.print("YES");
     }
+
 }
