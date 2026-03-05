@@ -9,7 +9,8 @@ public class Main{
         
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-        
+
+        // **(double)로 형변환 해주지 않을 경우 a/b(정수연산) 먼저 실행 후 double 자료형에 담기므로 0이 담겨 오답
         double result = (double)a/b;
         if(result<0.2){
             System.out.print("weak");
@@ -22,4 +23,5 @@ public class Main{
         }
         
     }
+
 }
