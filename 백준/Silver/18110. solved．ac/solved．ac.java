@@ -13,7 +13,7 @@ public class Main{
             return;
         }
         
-        int exceptedValue = (int) Math.round(n*0.15); // 제거할 점수의 개수 15% 반올림하는 함수 뭐더라 round?
+        int exceptedValue = (int) Math.round(n*0.15); // 제거할 점수의 개수
         int[] arr = new int[n];
         for(int i=0;i<n;i++){
             arr[i] = Integer.parseInt(br.readLine());
@@ -25,6 +25,7 @@ public class Main{
             sum += arr[i];
         }
         
+        // double로 형변환 한 최종결과를 반올림 해줘야 올바른 답이 나옴
         int result = (int) Math.round((double) sum/(n-exceptedValue*2));
         
         System.out.print(result);
